@@ -32,11 +32,11 @@
 
 | TC ID | Execution Date | Actual Result | Status | Bug ID | Evidence |
 |-------|---------------|--------------|--------|--------|----------|
-| TC-FLIST-001 | 27 Feb 2026 |  |  |  |  |
-| TC-FLIST-002 | 27 Feb 2026 |  |  |  |  |
-| TC-FLIST-003 | 27 Feb 2026 |  |  |  |  |
-| TC-FLIST-NEG-001 | 27 Feb 2026 |  |  |  |  |
-| TC-FLIST-NEG-002 | 27 Feb 2026 |  |  |  |  |
+| TC-FLIST-001 | 2026-02-27 | Item yang difavoritkan berhasil tampil pada halaman Favorite List | PASS | - | [View](../evidence/favorite-list/TC-FLIST-001.png) |
+| TC-FLIST-002 | 2026-02-27 | Item yang difavoritkan dari halaman list muncul secara sinkron di Favorite List | PASS | - | [View](../evidence/favorite-list/TC-FLIST-002.png) |
+| TC-FLIST-003 | 2026-02-27 | Item yang difavoritkan dari halaman detail berhasil ditampilkan di Favorite List | PASS | - | [View](../evidence/favorite-list/TC-FLIST-003.png) |
+| TC-FLIST-NEG-001 | 2026-02-27 | Saat tidak ada item favorit, sistem menampilkan empty state yang sesuai | PASS | - | [View](../evidence/favorite-list/TC-FLIST-NEG-001.png) |
+| TC-FLIST-NEG-002 | 2026-02-27 | Saat terjadi kegagalan API, sistem menampilkan error state dan opsi retry sesuai requirement | PASS | - | [View](../evidence/favorite-list/TC-FLIST-NEG-002.png) |
 
 ---
 
@@ -44,11 +44,11 @@
 
 | TC ID | Execution Date | Actual Result | Status | Bug ID | Evidence |
 |-------|---------------|--------------|--------|--------|----------|
-| TC-REM-001 | 27 Feb 2026 |  |  |  |  |
-| TC-REM-002 | 27 Feb 2026 |  |  |  |  |
-| TC-REM-003 | 27 Feb 2026 |  |  |  |  |
-| TC-REM-NEG-001 | 27 Feb 2026 |  |  |  |  |
-| TC-REM-NEG-002 | 27 Feb 2026 |  |  |  |  |
+| TC-REM-001 | 2026-02-27 | Item berhasil dihapus dari Favorite List dan langsung hilang dari daftar | PASS | - | [View](../evidence/remove/TC-REM-001.png) |
+| TC-REM-002 | 2026-02-27 | Setelah halaman di-refresh, item yang telah dihapus tetap tidak muncul (persist) | PASS | - | [View](../evidence/remove/TC-REM-002.png) |
+| TC-REM-003 | 2026-02-27 | Hanya item yang dipilih yang terhapus, item favorit lainnya tetap tampil | PASS | - | [View](../evidence/remove/TC-REM-003.png) |
+| TC-REM-NEG-001 | 2026-02-27 | Saat terjadi kegagalan API, item tetap tampil sebagai favorit dan sistem menampilkan pesan error | PASS | - | [View](../evidence/remove/TC-REM-NEG-001.png) |
+| TC-REM-NEG-002 | 2026-02-27 | Klik remove berulang tidak menyebabkan inkonsistensi, status akhir tetap sesuai | PASS | - | [View](../evidence/remove/TC-REM-NEG-002.png) |
 
 ---
 
@@ -56,9 +56,9 @@
 
 | TC ID | Execution Date | Actual Result | Status | Bug ID | Evidence |
 |-------|---------------|--------------|--------|--------|----------|
-| TC-SYNC-001 | 27 Feb 2026 |  |  |  |  |
-| TC-SYNC-002 | 27 Feb 2026 |  |  |  |  |
-| TC-SYNC-003 | 27 Feb 2026 |  |  |  |  |
-| TC-SYNC-NEG-001 | 27 Feb 2026 |  |  |  |  |
-| TC-SYNC-NEG-002 | 27 Feb 2026 |  |  |  |  |
+| TC-SYNC-001 | 2026-02-27 | Status favorit pada halaman detail sesuai dengan status di halaman list | PASS | - | [View](../evidence/sync/TC-SYNC-001.png) |
+| TC-SYNC-002 | 2026-02-27 | Setelah item dihapus dari Favorite List, ikon pada halaman list kembali ke status non-favorit | PASS | - | [View](../evidence/sync/TC-SYNC-002.png) |
+| TC-SYNC-003 | 2026-02-27 | Setelah logout dan login kembali, status favorit tetap tersimpan dan konsisten | PASS | - | [View](../evidence/sync/TC-SYNC-003.png) |
+| TC-SYNC-NEG-001 | 2026-02-27 | Saat koneksi lambat, sistem menampilkan indikator loading dan hasil akhir tetap konsisten | PASS | - | [View](../evidence/sync/TC-SYNC-NEG-001.png) |
+| TC-SYNC-NEG-002 | 2026-02-27 | Perubahan status favorit pada satu tab tercermin setelah tab lain di-refresh | PASS | - | [View](../evidence/sync/TC-SYNC-NEG-002.png) |
 

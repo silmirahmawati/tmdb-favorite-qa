@@ -17,7 +17,7 @@ Sebagai pengguna, saya ingin melakukan login agar dapat mengakses fitur Favorite
 - AC1: Pengguna dapat login menggunakan kredensial yang valid.
 - AC2: Sistem menampilkan pesan error apabila kredensial tidak valid.
 - AC3: Sesi login tersimpan (pengguna tetap login setelah refresh atau membuka ulang browser, sesuai kebutuhan sistem).
-- AC4: Pengguna dapat melakukan logout (jika tersedia fitur logout).
+- AC4: Pengguna dapat melakukan logout.
 ---
 ## Daftar Test Case
 ### Positive Scenario
@@ -26,7 +26,7 @@ Sebagai pengguna, saya ingin melakukan login agar dapat mengakses fitur Favorite
 2. **TC-LGN-002**  
    Setelah login berhasil, pengguna melakukan refresh halaman → status login tetap aktif (sesuai AC3).
 3. **TC-LGN-003**  
-   Pengguna menutup dan membuka kembali browser/aplikasi → tetap dalam keadaan login (jika menggunakan token persisten / remember me).
+   Pengguna menutup dan membuka kembali browser/aplikasi → tetap dalam keadaan login.
 ---
 ### Negative Scenario
 1. **TC-LGN-NEG-001**  
