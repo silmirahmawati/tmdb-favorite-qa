@@ -1,13 +1,8 @@
-# 🎬 TMDB Favorite Automation (Cypress)
+# TMDB Favorite Automation (Cypress)
 
 ## 📌 Deskripsi Project
 
 Project ini merupakan automation testing menggunakan **Cypress** untuk menguji fitur **Favorite Movie** pada website **The Movie Database (TMDB)**.
-
-Automation dibuat menggunakan pendekatan **API-based testing** agar:
-- Eksekusi lebih cepat
-- Tidak bergantung pada UI
-- Lebih stabil untuk regression test
 
 ---
 
@@ -82,19 +77,6 @@ automation/
 
 Buat file berikut di root folder `automation/`:
 
-`cypress.env.json`
-
-```json
-{
-  "USERNAME": "username_tmdb",
-  "PASSWORD": "password_tmdb",
-  "API_KEY": "api_key_tmdb"
-}
-```
-
-⚠️ File ini tidak di-commit ke repository karena berisi credential.
-
----
 
 ## ▶️ Cara Menjalankan Automation
 
@@ -124,10 +106,3 @@ tmdb-favorites.cy.js
 - ✅ TC-02 – Mark as favorite berhasil
 - ✅ TC-03 – Validasi favorite berhasil
 
----
-
-## 📎 Catatan
-
-- Automation menggunakan pendekatan API-based untuk meningkatkan stabilitas dan kecepatan eksekusi.
-- Tidak menggunakan validasi UI karena fokus pada integrasi API dan logic backend.
-- Cocok untuk regression test berbasis endpoint.
