@@ -64,3 +64,15 @@ Project location:
 cd automation
 npm install
 npx cypress open
+
+
+---
+
+## Konfigurasi Environment
+
+Sebelum menjalankan automation test, silakan buat file konfigurasi environment terlebih dahulu.
+
+Salin file berikut:
+
+```bash
+cp cypress.env.example.json cypress.env.json
